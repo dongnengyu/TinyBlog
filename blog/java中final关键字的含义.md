@@ -1,9 +1,9 @@
 # 
-final关键字的含义?
+#### final关键字的含义?
 
 final在Java中是一个保留的关键字，可以声明成员变量、方法、类以及本地变量。一旦你将引用声明作final，你将不能改变这个引用了，编译器会检查代码，如果你试图将变量再次初始化的话，编译器会报编译错误。
 
-什么是final变量？
+#### 什么是final变量？
 
 凡是对成员变量或者本地变量(在方法中的或者代码块中的变量称为本地变量)声明为final的都叫作final变量。final变量经常和static关键字一起使用，作为常量。下面是final变量的例子：
 ```
@@ -13,7 +13,7 @@ LOAN = new String("loan") //invalid compilation error
 ```
 final变量是只读的。
 
-什么是final方法?
+#### 什么是final方法?
 
 final也可以声明方法。方法前面加上final关键字，代表这个方法不可以被子类的方法重写。如果你认为一个方法的功能已经足够完整了，子类中不需要改变的话，你可以声明此方法为final。final方法比非final方法要快，因为在编译的时候已经静态绑定了，不需要在运行时再动态绑定。下面是final方法的例子：
 ```
@@ -30,7 +30,7 @@ class CheapPersonalLoan extends PersonalLoan{
 }
 ```
  
-什么是final类？
+#### 什么是final类？
 
 使用final来修饰的类叫作final类。final类通常功能是完整的，它们不能被继承。Java中有许多类是final的，譬如String, Interger以及其他包装类。下面是final类的实例：
 ```
@@ -43,7 +43,7 @@ class CheapPersonalLoan extends PersonalLoan{
 }
 
 ```
-   final关键字的好处
+#### final关键字的好处
 
 下面总结了一些使用final关键字的好处
 
@@ -56,7 +56,7 @@ final变量可以安全的在多线程环境下进行共享，而不需要额外
 
 相关阅读：为什么String是不可变的以及如何写一个不可变类。
 
-关于final的重要知识点
+#### 关于final的重要知识点
 
 final关键字可以用于成员变量、本地变量、方法以及类。
 final成员变量必须在声明的时候初始化或者在构造器中初始化，否则就会报编译错误。
